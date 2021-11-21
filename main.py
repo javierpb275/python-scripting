@@ -1,10 +1,18 @@
-from PIL import Image, ImageFilter
+import sys
+import os
+from PIL import Image
 
 if __name__ == '__main__':
-    img = Image.open('./astro.jpg')
-    img.thumbnail((400, 400))
-    img.save('thumbnail.jpg')
+    path = sys.argv[1]
+    directory = sys.argv[2]
 
-    print(img.size)#(400, 381)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+
+    for filename in os.listdir(path):
+        clean_name = os.path.splitext(filename)[0]
+        img = Image.open(f'{path}{filename}')
+        img.save(f'{directory}/{clean_name}.png', 'png')
+        print('all done!')
 
 
