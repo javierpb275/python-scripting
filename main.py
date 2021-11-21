@@ -2,17 +2,16 @@ from PIL import Image, ImageFilter
 
 if __name__ == '__main__':
     img = Image.open('./Pokedex/pikachu.jpg')
-    filtered_img = img.filter(ImageFilter.BLUR)
-    filtered_img2 = img.filter(ImageFilter.SMOOTH)
-    filtered_img3 = img.filter(ImageFilter.SHARPEN)
+    filtered_img = img.convert('L')
+    #crooked = filtered_img.rotate(90)
+    # crooked.save("grey.png", 'png')
+    #resize = filtered_img.resize((300, 300))
+    #resize.save("grey.png", 'png')
 
-    print(img)#<PIL.JpegImagePlugin.JpegImageFile image mode=RGB size=640x640 at 0x1600C4AF400>
-    print(img.format)#JPEG
-    print(img.size)#(640, 640)
-    print(img.mode)#RGB
+    box = (100, 100, 400, 400)
+    region = filtered_img.crop(box)
+    region.save("grey.png", 'png')
 
-    filtered_img = img.convert('L')#black and white
+    region.show()#show image
 
-    filtered_img.save("grey.png", 'png')
-    filtered_img2.save("blur.png", 'png')
 
