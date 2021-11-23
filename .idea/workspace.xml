@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f1e5fa4-7fd7-4387-ba45-723a8a317cf3" name="Changes" comment="exercise pdf merger">
-      <change afterPath="$PROJECT_DIR$/watermarked_output.pdf" afterDir="false" />
+    <list default="true" id="8f1e5fa4-7fd7-4387-ba45-723a8a317cf3" name="Changes" comment="exercise watermarker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -102,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637685445443</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="exercise watermarker">
+      <created>1637686282151</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637686282151</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +131,7 @@
     <MESSAGE value="exercise jpg to png converter" />
     <MESSAGE value="pdfs with python" />
     <MESSAGE value="exercise pdf merger" />
-    <option name="LAST_COMMIT_MESSAGE" value="exercise pdf merger" />
+    <MESSAGE value="exercise watermarker" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercise watermarker" />
   </component>
 </project>
