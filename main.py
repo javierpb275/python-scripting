@@ -1,18 +1,16 @@
-import sys
-import os
-from PIL import Image
+import PyPDF2
 
 if __name__ == '__main__':
-    path = sys.argv[1]
-    directory = sys.argv[2]
-
-    if not os.path.exists(directory):
-        os.makedirs(directory)
-
-    for filename in os.listdir(path):
-        clean_name = os.path.splitext(filename)[0]
-        img = Image.open(f'{path}{filename}')
-        img.save(f'{directory}/{clean_name}.png', 'png')
-        print('all done!')
+    with open('dummy.pdf', 'rb') as file:
+        print(file)#<_io.TextIOWrapper name='dummy.pdf' mode='r' encoding='cp1252'>
+        reader = PyPDF2.PdfFileReader(file)
+        print(reader.numPages)#1
+        page = reader.getPage(0)
+        print(page)#{'/Type': '/Page', '/Parent': IndirectObject(4, 0)...
+        page.rotateCounterClockwise(90)
+        writer = PyPDF2.PdfFileWriter()
+        writer.addPage(page)
+        with open('tilt.pdf', 'wb') as new_file:
+            writer.write(new_file)
 
 
