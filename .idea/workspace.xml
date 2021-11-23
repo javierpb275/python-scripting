@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f1e5fa4-7fd7-4387-ba45-723a8a317cf3" name="Changes" comment="pdfs with python">
-      <change afterPath="$PROJECT_DIR$/super.pdf" afterDir="false" />
+    <list default="true" id="8f1e5fa4-7fd7-4387-ba45-723a8a317cf3" name="Changes" comment="exercise pdf merger">
+      <change afterPath="$PROJECT_DIR$/watermarked_output.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -95,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637684509465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="exercise pdf merger">
+      <created>1637685445443</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1637685445443</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -117,6 +124,7 @@
     <MESSAGE value="images with python 3: thumbnail method" />
     <MESSAGE value="exercise jpg to png converter" />
     <MESSAGE value="pdfs with python" />
-    <option name="LAST_COMMIT_MESSAGE" value="pdfs with python" />
+    <MESSAGE value="exercise pdf merger" />
+    <option name="LAST_COMMIT_MESSAGE" value="exercise pdf merger" />
   </component>
 </project>
